@@ -1,2 +1,9 @@
   <h1>1d20</h1>
-  <p><%= @outcome =%></p>
+
+  <% if @die_roll == 1 %>
+    <p style="color: red"><%= @outcome %></p>
+  <% elsif @die_roll == 20 %>
+    <p style="color: green"><%= @outcome %></p>
+  <% else %>
+    <p><%= @outcome %></p>
+  <% end %>
