@@ -20,19 +20,7 @@ get("/giraffe") do
 end
 
 get("/") do
-  "<h1>Dice Roll</h1>
-  <div>
-    <a href='/dice/2/6'>Roll 2 6-sided dice</a>
-  </div>
-  <div>
-  <a href='/dice/2/10'>Roll 2 10-sided dice</a>
-  </div>
-  <div>
-  <a href='/dice/1/20'>Roll 1 20-sided dice</a>
-  </div>
-  <div>
-  <a href='/dice/5/4'>Roll 5 4-sided dice</a>
-  </div>"
+  erb(:elephant)
 end
 
 get("/dice/2/6") do
